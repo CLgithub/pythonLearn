@@ -25,7 +25,7 @@ print("name[0:]=%s"%name[0:])
 print("name[1:-1:2]=%s"%name[1:-1:2])#跳跃单位为2
 print("name[1:-1:3]=%s"%name[1:-1:3])#跳跃单位为3
 print("name[::2]=%s"%name[::2])#取出基数个
-print("name[1::2]=%s"%name[1::2])#取出基数个
+print("name[1::2]=%s"%name[1::2])#取出偶数个
 #print("name[::0]=%s"%name[::0])
 print("name[-2:-5:-1]=%s"%name[-2:-5:-1])
 #倒序name
