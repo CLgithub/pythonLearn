@@ -1,4 +1,4 @@
-#incding=utf-8
+#coding=utf-8
 '''
 列表
  定义列表
