@@ -28,3 +28,5 @@ print(age)
 name=infor.get("name")
 print(name)
 #思考如何遍历字典,貌似不存在这个问题，因为直接print出来就行，不像java打印出来是个对象
+
+#注意⚠：列表的定义 names=["aa","bb",...] 字典的定义 infor={"1":"aa","2":"bb",...}
