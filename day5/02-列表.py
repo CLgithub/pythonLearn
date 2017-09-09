@@ -10,8 +10,9 @@ print("names=%s"%names)
 列表的增删改查
 增：
   list.append("a") 在list最后增加a
+  append注意⚠：append没有返回值，是直接改变list
   list.insert(2,'a')在list的指定位置插入a
-  list1+=list2 list2合并到list1 等同于 list1.extend(list2)
+  list1+=list2 list2合并到list1 等同于 list1.extend(list2) extent中list2只能是可以迭代的类型
 删除：
   list.pop() 从list中删除最后一个元素，并返回该元素
   list.remove("a") 从list中删除遇到的第一个a元素
