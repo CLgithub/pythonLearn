@@ -6,3 +6,6 @@
 '''
 tuple1=('a','bb',"cc",123)
 print(tuple1)
+#拆包
+a,b,c,d=tuple1
+print("a=%s b=%s c=%s d=%s"%(a,b,c,d))
