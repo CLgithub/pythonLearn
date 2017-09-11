@@ -30,6 +30,11 @@ def func4(i,j):
     #第二种方式：直接写，其实默认相对应封装成元组返回
     return i,j,sum1
 
+#定义一个带有缺省参数的函数，j=3
+def func5(i,j=3):
+    sum1=i+j
+    return sum1
+
 #调用函数fun1()
 #func1()
 #addFunc(3,2)
@@ -39,3 +44,6 @@ def func4(i,j):
 
 i,j,sum1=func4(2,5)
 print("i=%d,j=%d,i+j=%d"%(i,j,i+j))
+
+#调用缺省参数的函数
+print(func5(2))
