@@ -1,0 +1,36 @@
+#coding=utf-8
+'''
+使用 type(a) 可以返回变量的类型
+使用 id(a) 可以返回变量所存储的地址
+'''
+a=100
+b=200
+c=a
+A=[11,22,33]
+B=A
+print("type(a)=%s"%(type(a)))
+print("id(a)=%s"%(id(a)))
+print("-"*30)
+print("type(b)=%s"%(type(b)))
+print("id(b)=%s"%(id(b)))
+print("-"*30)
+print("type(c)=%s"%(type(c)))
+print("id(c)=%s"%(id(c)))
+print("-"*30)
+print("type(A)=%s"%(type(A)))
+print("id(A)=%s"%(id(A)))
+print("-"*30)
+print("type(B)=%s"%(type(B)))
+print("id(B)=%s"%(id(B)))
+A.append(44)#A改变后，B还是引用A，B也会改变，和java的对象类似
+print("-"*30)
+print("A.append(44)")
+print("type(A)=%s"%(type(A)))
+print("id(A)=%s"%(id(A)))
+print("-"*30)
+print("type(B)=%s"%(type(B)))
+print("id(B)=%s"%(id(B)))
+print("-"*50)
+a=a+1#a改变后，a是指向另一个地方，c不会改变
+print("a=%d"%a)
+print("c=%d"%c)
