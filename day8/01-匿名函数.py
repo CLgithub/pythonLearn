@@ -10,5 +10,5 @@ lam1=lambda x,y:x+y #匿名函数函数体不需要写return
 a=lam1(3,4)
 print(a)
 
-lam2=lambda x:print(x)
+lam2=lambda x:print(x)#python2中不能写print，只能写表达式
 b=lam2(4)
