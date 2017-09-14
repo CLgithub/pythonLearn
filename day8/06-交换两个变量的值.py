@@ -1,18 +1,19 @@
+#
 a=4
 b=5
 
 a=a^b
-print(a)
-print(b)
+print(a) #异或是二进制的运算
 b=a^b# a^b^b
-print(b)
 a=a^b# a^b^a
 
 print(a)
 print(b)
 
-
-print("-"*30)
-c=5
-d=5
-print(c^d)
+c="c"
+d="d"
+c=c^d
+d=c^d
+c=c^d
+print(c)
+print(d)
