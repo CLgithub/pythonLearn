@@ -5,7 +5,7 @@
 '''
 #定义一个字典
 infor={"name":"aa","age":18,"gender":"男"}
-print(infor)
+print("infor=%s"%infor)
 print("name=%s age=%d gender=%s"%(infor["name"],infor["age"],infor["gender"]))
 
 '''
@@ -13,13 +13,13 @@ print("name=%s age=%d gender=%s"%(infor["name"],infor["age"],infor["gender"]))
 '''
 #增加
 infor["address"]="深圳"
-print(infor)
+print("infor=%s"%infor)
 #删除
 del infor["address"]
-print(infor)
+print("infor=%s"%infor)
 #修改
 infor["name"]="bb"
-print(infor)
+print("infor=%s"%infor)
 #查
 gender=infor["gender"]
 print(gender)
