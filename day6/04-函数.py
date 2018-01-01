@@ -36,11 +36,11 @@ def func5(i,j=3):
     return sum1
 
 #调用函数fun1()
-#func1()
-#addFunc(3,2)
+func1()
+addFunc(3,2)
 
-#sum1=addFunc2(2,5)
-#print("调用函数addFunc2(2,5)得到返回值=%s"%sum1)
+sum1=addFunc2(2,5)
+print("调用函数addFunc2(2,5)得到返回值=%s"%sum1)
 
 i,j,sum1=func4(2,5)
 print("i=%d,j=%d,i+j=%d"%(i,j,i+j))
