@@ -32,7 +32,9 @@ print("str1.replace(a,x,1)=%s"%str1.replace("a","x",2))
 # str.split(a) 按a切割str
 print("-"*30)
 print("str1.split(a)=%s"%str1.split("a"))
-#print("str1.partition(a)=%s"%str1.partition(""))
+print(str1.split("a")[0])
+print(str1.partition("a")[0])
+print("*"*40)
 
 # 首字母大写
 print("-"*30)
@@ -66,13 +68,27 @@ print("|str1.center(40).lstrip()|=|%s|"%(str1.center(40).lstrip()))
 print("|str1.center(40).rstrip()|=|%s|"%(str1.center(40).rstrip()))
 print("|str1.center(40).strip()|=|%s|"%(str1.center(40).strip()))
 
+str2="a12345\n789abcde\nfabca"
+print("-"*30)
+print("str2=%s"%str2)
+print("-"*30)
+# 按行切割
+print("str2.splitlines()=%s"%str2.splitlines())
 
+#判断字符串
+#判断是否是纯字母 isalpha()
+#判断是否是只有字母和数字 isalnum()
+#判断是否是纯空格isspace()
+print("-"*30)
+print("str1.isalpha()=%s"%str1.isalpha())
+print("str1.isalnum()=%s"%str1.isalnum())
+print("str1.isspace()=%s"%str1.isspace())
 
-
-
-
-
-
+# a.join(b) 将b拆包，用a去连接b的各个部分，得到一个新的字符串
+print("-"*30)
+a="_"
+b=["x","y"]
+print(a.join(b))
 
 
 
