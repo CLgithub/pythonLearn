@@ -21,13 +21,17 @@
 f.writer("testData") 向文件f中写入testData数据
 4.读取文件中的数据
 f.read(x) 依次读取文件f中的x个字符并返回，操作指针指向下一个位置,如果没有写x则全读出来
+5.另外两种读取文件的方式
+	f.readline() 以行的方式读取文件内容并返回，指针向下一行移动
+	f.readlines() 以行的方式读取文件内容并以列表形式返回
 '''
 
 file1=open('file1','w+')
 file2=open('file1','w+')
 file3=open('file1','w+')
+file4=open('file1','r+')
 
-c=file1.write("testabc")
+c=file1.write("test\nabc\n123")
 print("向文件file1中写入了%d个字符"%c)
 
 file1.close()
@@ -35,6 +39,11 @@ file1.close()
 for x in file2.read():
     print(x)
 
+line=file3.readline()
+print("读取一行%s"%line)
+lines=file3.readlines()
+print("读取所有行=%s"%lines)
 #while 
 file2.close()
 file3.close()
+file4.close()
