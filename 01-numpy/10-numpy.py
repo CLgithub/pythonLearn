@@ -8,14 +8,12 @@ v = np.array([9,10])
 w = np.array([11, 12])
 
 #数学定义中不能这样运算，也可能是自己目前理解有误
-'''
 print(v.dot(w))
 print(np.dot(v,w))
 print('-----------------')
-'''
 
 print(v.dot(x))
-print(np.dot(v, x)) #np.dot(x,v) 按照数学中的定义是没有意义的，但是这里能算出来，比较奇怪
+print(np.dot(v, x)) #np.dot(x,v) 按照数学中的定义是没有意义的，但是这里能算出来，应该会按能算的方式取组合
 print('-----------------')
 
 #print(x*y)  #元素相乘
